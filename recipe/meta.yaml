@@ -1,5 +1,5 @@
 {% set name = "cppyythonizations" %}
-{% set version = "1.2.0" %}
+{% set version = "1.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/flatsurf/cppyythonizations/releases/download/{{ version }}/cppyythonizations-{{ version }}.tar.gz
-  sha256: 3891db5bc876cdf5503357aca4ba646cef78010aae2291ab5a183203a052062c
+  sha256: df5c3c63d14b6c77f100dd6849fd3ef79516c74f792245aafd707e0a4d7d95bc
 
 build:
   noarch: python
