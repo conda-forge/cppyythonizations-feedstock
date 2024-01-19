@@ -1,5 +1,5 @@
 {% set name = "cppyythonizations" %}
-{% set version = "1.2.2" %}
+{% set version = "1.2.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,20 +7,18 @@ package:
 
 source:
   url: https://github.com/flatsurf/cppyythonizations/releases/download/{{ version }}/cppyythonizations-{{ version }}.tar.gz
-  sha256: 997710165dfaf86d267eb8276c3c5939ad3c7964c21099a2862595aadf64075b
+  sha256: fc0a6cf2ce59e48bb5b540b6d019b2356f093db17ecb109ec10cfcd35b27dddc
 
 build:
   noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
   number: 0
 
 requirements:
-  build:
-    - automake
-    - coreutils
-    - make
   host:
     - python >=3.6
     - setuptools
+    - pip
   run:
     - python >=3.6
     - cppyy
