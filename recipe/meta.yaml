@@ -11,16 +11,14 @@ source:
 
 build:
   noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
   number: 0
 
 requirements:
-  build:
-    - automake
-    - coreutils
-    - make
   host:
     - python >=3.6
     - setuptools
+    - pip
   run:
     - python >=3.6
     - cppyy
