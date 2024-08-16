@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/flatsurf/cppyythonizations/releases/download/{{ version }}/cppyythonizations-{{ version }}.tar.gz
-  sha256: fc0a6cf2ce59e48bb5b540b6d019b2356f093db17ecb109ec10cfcd35b27dddc
+  sha256: d20fa273b606d68bb35e0396b042f55d2c5093076457f06b5bb161d8fa888393
 
 build:
   noarch: python
